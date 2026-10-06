@@ -328,6 +328,108 @@ img{max-width:100%;height:auto;image-rendering:auto}
   .plan-product-img{max-width:100%;padding:6px}
   .projectlogo{width:155px;height:155px}
 }
+
+/* ===== popup oferta especial ===== */
+.upsell-modal{
+  max-width:940px;
+  padding:34px;
+  border-radius:22px;
+  border:1px solid #eadcc3;
+  box-shadow:0 28px 80px #0005;
+}
+.upsell-head{text-align:center;max-width:760px;margin:0 auto 24px}
+.upsell-head h2{font-size:36px;margin:8px auto 12px}
+.upsell-head p{color:#5d5650;margin:0}
+.upsell-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:20px;
+  align-items:stretch;
+}
+.upsell-card{
+  border:2px solid #c99a39;
+  border-radius:16px;
+  padding:24px;
+  background:linear-gradient(180deg,#fffdf8,#fff8ed);
+  box-shadow:0 14px 32px #5f3e1014;
+}
+.upsell-card h3{
+  text-align:center;
+  font-size:28px;
+  margin:0 0 16px;
+  color:#241815;
+}
+.upsell-card ul{
+  list-style:none;
+  padding:0;
+  margin:0 0 18px;
+}
+.upsell-card li{
+  padding:8px 0;
+  border-bottom:1px solid #eee2d1;
+  color:#3f352f;
+  font-weight:600;
+}
+.upsell-price{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  align-items:baseline;
+  margin-top:18px;
+}
+.old-price{
+  color:#777;
+  text-decoration:line-through;
+  font-size:18px;
+}
+.upsell-price strong{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  color:#5f171b;
+  font-size:42px;
+  line-height:1;
+}
+.upsell-save{
+  text-align:center;
+  color:#9b6c1e;
+  font-weight:800;
+  margin:10px 0 12px;
+}
+.upsell-yes{display:block;text-align:center}
+.upsell-side{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:18px;
+}
+.upsell-side img{
+  width:100%;
+  max-height:340px;
+  object-fit:contain;
+  background:#fffaf2;
+  padding:10px;
+  border:1px solid #eadcc3;
+  border-radius:16px;
+  box-shadow:0 12px 28px #32200d12;
+}
+.upsell-no{
+  display:block;
+  text-align:center;
+  padding:15px 18px;
+  border:2px solid #2b2434;
+  color:#2b2434;
+  background:#fff;
+  border-radius:999px;
+  font-weight:800;
+  text-decoration:none;
+}
+.upsell-no:hover{background:#f7f4f1}
+@media(max-width:720px){
+  .upsell-modal{padding:24px 16px;max-height:92vh;overflow:auto}
+  .upsell-head h2{font-size:29px}
+  .upsell-grid{grid-template-columns:1fr}
+  .upsell-side img{max-height:230px}
+  .upsell-price strong{font-size:38px}
+}
 </style></head><body>
 <div class="notice">OFERTA DISPONÍVEL HOJE <span id="today-date"></span></div>
 <section class="hero"><div class="wrap"><div class="cross">✝</div><div class="kicker">Formação Essencial em Teologia Católica</div><h1>Você vive a fé católica. Agora chegou a hora de compreendê-la com mais profundidade.</h1><p class="lead">Estude Bíblia, Santa Missa, Sacramentos, Doutrina, Nossa Senhora e os principais ensinamentos da Igreja através de materiais organizados por tema, do essencial ao aprofundamento.</p><img class="hero-hook-image" src="https://i.imgur.com/a31eZEr.png" alt="Formação Essencial em Teologia Católica" fetchpriority="high" decoding="async"><div class="chips"><span class="chip">+400 materiais</span><span class="chip">Estudo organizado</span></div><div class="priceLead">A partir de <b>R$ 14,90</b> · pagamento único</div><br><a class="btn" href="#planos">QUERO COMEÇAR HOJE</a><div class="trust">✓ Acesso imediato &nbsp; ✓ Acesso vitalício &nbsp; ✓ 7 dias de garantia</div></div></section>
@@ -349,7 +451,7 @@ img{max-width:100%;height:auto;image-rendering:auto}
 <section class="cream"><div class="wrap center"><div class="kicker">✝ Na opção Formação + Biblioteca</div><h2>Amplie sua formação com a Biblioteca Católica</h2><p class="sub">Além da formação, a opção completa reúne materiais práticos de espiritualidade, catequese, liturgia e vida de fé.</p><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica com acesso completo" loading="lazy" decoding="async"></div><div class="chips"><span class="chip">Novenas</span><span class="chip">Via-Sacra e Adoração</span><span class="chip">Catequese</span><span class="chip">Tempos Litúrgicos</span><span class="chip">Santos e Devoções</span><span class="chip">Crianças e Família</span></div><h3>Por apenas R$ 13 a mais</h3><div class="library"><details><summary>Santos, Liturgia e Tradição +</summary><p>Materiais sobre santos, calendário litúrgico, festas, símbolos e momentos do ano da Igreja.</p></details><details><summary>Pastoral, Grupos e Jovens +</summary><p>Roteiros, encontros, oração, Via-Sacra, novenas e materiais para grupos.</p></details><details><summary>Catequese e Ensino +</summary><p>Guias, atividades, conteúdos infantis, encontros e materiais de apoio.</p></details></div><a class="btn" href="#planos">COMPARAR AS DUAS OPÇÕES</a></div></section>
 <section><div class="wrap center"><div class="kicker">Bônus incluídos</div><h2>Além de todo o conteúdo, você ainda recebe 12 bônus</h2><p class="sub">6 bônus na Formação Essencial e mais 6 na opção com Biblioteca.</p><div class="bonus-gallery"><img src="https://i.imgur.com/xSeeEZj.jpg" alt="Bônus 1" loading="lazy" decoding="async"><img src="https://i.imgur.com/PUSVU2O.jpg" alt="Bônus 2" loading="lazy" decoding="async"><img src="https://i.imgur.com/PUSVU2O.jpg" alt="Bônus 3" loading="lazy" decoding="async"><img src="https://i.imgur.com/XuPFfDe.jpg" alt="Bônus 4" loading="lazy" decoding="async"><img src="https://i.imgur.com/2be14nn.jpg" alt="Bônus 5" loading="lazy" decoding="async"><img src="https://i.imgur.com/vGpqbo1.jpg" alt="Bônus 6" loading="lazy" decoding="async"></div><div class="included"><div>✓ +400 materiais</div><div>✓ Acesso vitalício</div><div>✓ Materiais reunidos por temas</div><div>✓ Pagamento único</div><div>✓ Acesso imediato</div></div></div></section>
 <section class="cream"><div class="wrap center"><div class="kicker">Tudo incluído</div><h2>Tudo o que você recebe ao entrar hoje</h2><div class="included"><div>✓ Formação Essencial completa</div><div>✓ +400 materiais organizados</div><div>✓ 7 áreas de estudo</div><div>✓ Plano de estudos</div><div>✓ Mapas mentais e resumos</div><div>✓ Acesso pelo celular ou computador</div><div>✓ Acesso vitalício</div><div>✓ Bônus digitais</div></div><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Tudo o que você recebe ao entrar hoje" loading="lazy" decoding="async"></div><a class="btn" href="#planos">QUERO GARANTIR MEU ACESSO</a></div></section>
-<section id="planos"><div class="wrap center"><div class="kicker">✝ Duas opções</div><h2>Escolha a opção ideal para você</h2><p class="sub">A Formação Essencial está completa nas duas opções. Por R$ 27,90, você também leva a Biblioteca Católica e conteúdos extras.</p><p>Preço especial encerra em:</p><div class="timer" id="timer">15:00</div><div class="plans"><div class="plan"><div class="kicker">Para começar seus estudos</div><h3>Formação Essencial</h3><ul><li>+400 materiais organizados</li><li>Plano de estudos</li><li>Mapas mentais e resumos</li><li>Acesso digital</li><li>Acesso vitalício</li><li>6 bônus</li></ul><div class="money">R$ 14,90</div><div class="center">pagamento único</div><a class="btn" href="#">QUERO GARANTIR MEU ACESSO</a><div class="trust center">Checkout será adicionado depois</div></div><div class="plan best"><div class="tag">✦ MELHOR CUSTO-BENEFÍCIO</div><div class="kicker">Para ir além</div><h3>Formação + Biblioteca Católica</h3><img class="plan-product-img" src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica - acesso completo" loading="lazy" decoding="async"><ul><li>Tudo da Formação Essencial</li><li>Biblioteca Católica</li><li>Novenas</li><li>Via-Sacra e Adoração</li><li>Materiais de Catequese</li><li>Santos, Devoções e Ano Litúrgico</li><li>+6 bônus exclusivos</li></ul><div class="money">R$ 27,90</div><div class="center">pagamento único · apenas R$13 a mais</div><a class="btn" href="#">QUERO O ACESSO COMPLETO</a><div class="trust center">Checkout será adicionado depois</div></div></div></div></section>
+<section id="planos"><div class="wrap center"><div class="kicker">✝ Duas opções</div><h2>Escolha a opção ideal para você</h2><p class="sub">A Formação Essencial está completa nas duas opções. Por R$ 27,90, você também leva a Biblioteca Católica e conteúdos extras.</p><p>Preço especial encerra em:</p><div class="timer" id="timer">15:00</div><div class="plans"><div class="plan"><div class="kicker">Para começar seus estudos</div><h3>Formação Essencial</h3><ul><li>+400 materiais organizados</li><li>Plano de estudos</li><li>Mapas mentais e resumos</li><li>Acesso digital</li><li>Acesso vitalício</li><li>6 bônus</li></ul><div class="money">R$ 14,90</div><div class="center">pagamento único</div><a class="btn" href="#" onclick="openBasicOffer();return false">QUERO GARANTIR MEU ACESSO</a><div class="trust center">Pagamento único · acesso imediato</div></div><div class="plan best"><div class="tag">✦ MELHOR CUSTO-BENEFÍCIO</div><div class="kicker">Para ir além</div><h3>Formação + Biblioteca Católica</h3><img class="plan-product-img" src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica - acesso completo" loading="lazy" decoding="async"><ul><li>Tudo da Formação Essencial</li><li>Biblioteca Católica</li><li>Novenas</li><li>Via-Sacra e Adoração</li><li>Materiais de Catequese</li><li>Santos, Devoções e Ano Litúrgico</li><li>+6 bônus exclusivos</li></ul><div class="money">R$ 27,90</div><div class="center">pagamento único · apenas R$13 a mais</div><a class="btn" href="https://go.fortpayplataforma.com.br/e0dkc">QUERO O ACESSO COMPLETO</a><div class="trust center">Pagamento único · acesso imediato</div></div></div></div></section>
 <section class="dark"><div class="wrap"><div class="guarantee"><div class="seal"><img class="guarantee-img" src="https://i.imgur.com/zqMpJ16.png" alt="Garantia de 7 dias" loading="lazy" decoding="async"></div><div><h2>Você tem 7 dias para conhecer tudo</h2><p>Use este espaço para apresentar exatamente as condições da garantia oferecida no seu checkout. O texto final deve corresponder às condições reais de reembolso.</p></div></div></div></section>
 <section><div class="wrap center"><div class="kicker">Depoimentos</div><h2>O que dizem os alunos</h2><p class="sub">Adicione aqui apenas avaliações reais recebidas do seu produto.</p><img class="testimonial-image" src="https://i.imgur.com/HgF2qAy.png" alt="Depoimentos de alunos" loading="lazy" decoding="async"></div></section>
 <section class="cream"><div class="wrap"><div class="project"><div class="projectlogo"><img class="projectlogo-img" src="https://i.imgur.com/5lngx9f.png" alt="Logo Formação Essencial em Teologia Católica" loading="lazy" decoding="async"></div><div><div class="kicker">Projeto independente</div><h2>Um projeto dedicado a tornar o estudo da fé católica mais acessível</h2><p>A Formação Essencial foi organizada para ajudar quem deseja conhecer e aprofundar a própria fé, com conteúdos separados por temas e uma experiência de estudo simples.</p><p><b>† Projeto independente de estudo pessoal.</b> Não apresenta vínculo institucional ou reconhecimento acadêmico oficial.</p></div></div></div></section>
@@ -358,7 +460,41 @@ img{max-width:100%;height:auto;image-rendering:auto}
 <section class="final-extra-image"><div class="wrap center"><div class="image-slot filled"><img src="https://i.imgur.com/6edfmO3.png" alt="Imagem adicional da Formação Essencial em Teologia Católica" loading="lazy" decoding="async"></div></div></section>
 <section class="student"><div class="wrap"><div class="studentbox"><div class="cross">✝</div><div class="kicker">Já é aluno?</div><h2>Já comprou? Acesse seus materiais aqui</h2><p>Quando sua área de membros estiver definida, coloque o link de acesso neste botão.</p><a class="btn" href="#">ACESSAR MEUS PRODUTOS</a></div></div></section>
 <section class="cream"><div class="wrap center"><div class="kicker">Precisa de ajuda?</div><h2>Fale com o suporte</h2><p class="sub">Quando você definir seus canais de atendimento, os botões de e-mail e WhatsApp entram exatamente aqui.</p><div class="chips"><span class="chip">✉ ABRIR E-MAIL</span><span class="chip">◉ ABRIR WHATSAPP</span></div></div></section><div class="footer">Formação Essencial em Teologia Católica · Produto digital · Projeto independente<br>© 2026 · Todos os direitos reservados</div>
-<div class="modal" id="exit"><div class="modalbox"><button class="close" onclick="closeExit()">×</button><div class="kicker">Antes de sair</div><h2>Uma condição especial pode aparecer aqui</h2><p>O bloco de oferta de saída está funcional. Assim que você definir a condição real e o checkout, substituímos este conteúdo.</p><a class="btn" href="#planos" onclick="closeExit()">VER AS OPÇÕES</a></div></div>
+<div class="modal" id="basicOffer">
+    <div class="modalbox upsell-modal">
+      <button class="close" onclick="closeBasicOffer()" aria-label="Fechar">×</button>
+      <div class="upsell-head">
+        <div class="kicker">CONDIÇÃO ESPECIAL ANTES DE SEGUIR</div>
+        <h2>Leve o Curso + Biblioteca Católica por apenas R$ 19,90</h2>
+        <p>Você escolheu a Formação Essencial. Antes de continuar, pode adicionar a Biblioteca Católica completa por uma condição especial disponível somente agora.</p>
+      </div>
+      <div class="upsell-grid">
+        <div class="upsell-card">
+          <h3>Formação + Biblioteca Católica</h3>
+          <ul>
+            <li>✓ Tudo da Formação Essencial</li>
+            <li>✓ Biblioteca Católica completa</li>
+            <li>✓ Novenas para o ano todo</li>
+            <li>✓ Via-Sacra e adoração</li>
+            <li>✓ Tempos litúrgicos</li>
+            <li>✓ Santos e devoções</li>
+            <li>✓ Materiais de catequese</li>
+            <li>✓ Conteúdos para crianças e família</li>
+          </ul>
+          <div class="upsell-price">
+            <span class="old-price">R$ 27,90</span>
+            <strong>R$ 19,90</strong>
+          </div>
+          <div class="upsell-save">Você economiza R$ 8,00 agora</div>
+          <a class="btn upsell-yes" href="https://go.fortpayplataforma.com.br/ihuw6">SIM, QUERO CURSO + BIBLIOTECA</a>
+        </div>
+        <div class="upsell-side">
+          <img src="https://i.imgur.com/mNCoYWd.png" alt="Curso + Biblioteca Católica">
+          <a class="upsell-no" href="https://go.fortpayplataforma.com.br/hcvrbg2if3">Não, quero apenas a Formação Essencial por R$ 14,90</a>
+        </div>
+      </div>
+    </div>
+  </div>
 <script>
 (function(){
   const el=document.getElementById('today-date');
@@ -375,15 +511,19 @@ setInterval(()=>{
       e=document.getElementById('timer');
   if(e)e.textContent=m+':'+s;
 },1000);
-let shown=false;
-document.addEventListener('mouseout',e=>{
-  if(e.clientY<=0&&!shown){
-    const exit=document.getElementById('exit');
-    if(exit){shown=true;exit.classList.add('on')}
-  }
-});
-function closeExit(){
-  const exit=document.getElementById('exit');
-  if(exit)exit.classList.remove('on');
+function openBasicOffer(){
+  const modal=document.getElementById('basicOffer');
+  if(modal) modal.classList.add('on');
 }
+function closeBasicOffer(){
+  const modal=document.getElementById('basicOffer');
+  if(modal) modal.classList.remove('on');
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') closeBasicOffer();
+});
+document.addEventListener('click',e=>{
+  const modal=document.getElementById('basicOffer');
+  if(modal && e.target===modal) closeBasicOffer();
+});
 </script></body></html>
