@@ -209,14 +209,133 @@ p{color:#4f4944}
   .btn:after{animation:none}
   .btn,.feature,.step,.bonus{transition:none}
 }
+
+/* ===== tratamento profissional das imagens ===== */
+img{max-width:100%;height:auto;image-rendering:auto}
+.hero-hook-image{
+  width:min(100%,980px);
+  height:auto;
+  object-fit:contain;
+  background:#fffaf1;
+  padding:8px;
+  border:1px solid #ead9b8;
+  border-radius:22px;
+  box-shadow:0 24px 60px #2e1c0d26;
+}
+.image-slot.filled{
+  width:100%;
+  max-width:920px;
+  margin:30px auto;
+  padding:10px;
+  background:linear-gradient(180deg,#fffdf8,#f8f0e3);
+  border:1px solid #eadcc4;
+  border-radius:20px;
+  box-shadow:0 18px 48px #2e1d0e16;
+  overflow:visible;
+}
+.image-slot.filled img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+  border-radius:14px;
+  box-shadow:none;
+  display:block;
+}
+.dark .image-slot.filled{
+  background:#ffffff0a;
+  border-color:#ffffff18;
+  box-shadow:0 18px 48px #0003;
+}
+.bonus-gallery{
+  align-items:stretch;
+  gap:18px;
+}
+.bonus-gallery img{
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+  background:#fffdf9;
+  padding:8px;
+  border:1px solid #eadfcd;
+  border-radius:16px;
+  box-shadow:0 12px 30px #2e1d0e12;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.bonus-gallery img:hover{
+  transform:translateY(-3px);
+  box-shadow:0 18px 38px #2e1d0e1d;
+}
+.plan-product-img{
+  width:100%;
+  max-width:350px;
+  height:auto;
+  object-fit:contain;
+  background:#fffdf9;
+  padding:8px;
+  border:1px solid #e5d6bd;
+  border-radius:16px;
+  box-shadow:0 12px 28px #2c1c0e14;
+}
+.guarantee-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  clip-path:none;
+}
+.projectlogo{
+  width:190px;
+  height:190px;
+  border:0;
+  border-radius:0;
+  overflow:visible;
+  background:transparent;
+}
+.projectlogo-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  border-radius:0;
+  clip-path:none;
+  background:transparent;
+}
+.testimonial-image{
+  width:min(100%,940px);
+  height:auto;
+  object-fit:contain;
+  padding:8px;
+  background:#fff;
+  border:1px solid #eadfcb;
+  border-radius:16px;
+  box-shadow:0 18px 42px #2c1c0f1f;
+}
+.final-extra-image .image-slot.filled{
+  max-width:940px;
+}
+@media(max-width:720px){
+  .hero-hook-image{padding:5px;border-radius:15px}
+  .image-slot.filled{padding:6px;border-radius:15px;margin:22px auto}
+  .image-slot.filled img{border-radius:10px}
+  .bonus-gallery{grid-template-columns:1fr;gap:14px}
+  .bonus-gallery img{padding:6px;border-radius:14px}
+  .plan-product-img{max-width:100%;padding:6px}
+  .projectlogo{width:155px;height:155px}
+}
 </style></head><body>
 <div class="notice">OFERTA DISPONÍVEL HOJE <span id="today-date"></span></div>
-<section class="hero"><div class="wrap"><div class="cross">✝</div><div class="kicker">Formação Essencial em Teologia Católica</div><h1>Você vive a fé católica. Agora chegou a hora de compreendê-la com mais profundidade.</h1><p class="lead">Estude Bíblia, Santa Missa, Sacramentos, Doutrina, Nossa Senhora e os principais ensinamentos da Igreja através de materiais organizados por tema, do essencial ao aprofundamento.</p><img class="hero-hook-image" src="https://i.imgur.com/a31eZEr.png" alt="Formação Essencial em Teologia Católica"><div class="chips"><span class="chip">+400 materiais</span><span class="chip">Estudo organizado</span></div><div class="priceLead">A partir de <b>R$ 14,90</b> · pagamento único</div><br><a class="btn" href="#planos">QUERO COMEÇAR HOJE</a><div class="trust">✓ Acesso imediato &nbsp; ✓ Acesso vitalício &nbsp; ✓ 7 dias de garantia</div></div></section>
+<section class="hero"><div class="wrap"><div class="cross">✝</div><div class="kicker">Formação Essencial em Teologia Católica</div><h1>Você vive a fé católica. Agora chegou a hora de compreendê-la com mais profundidade.</h1><p class="lead">Estude Bíblia, Santa Missa, Sacramentos, Doutrina, Nossa Senhora e os principais ensinamentos da Igreja através de materiais organizados por tema, do essencial ao aprofundamento.</p><img class="hero-hook-image" src="https://i.imgur.com/a31eZEr.png" alt="Formação Essencial em Teologia Católica" fetchpriority="high" decoding="async"><div class="chips"><span class="chip">+400 materiais</span><span class="chip">Estudo organizado</span></div><div class="priceLead">A partir de <b>R$ 14,90</b> · pagamento único</div><br><a class="btn" href="#planos">QUERO COMEÇAR HOJE</a><div class="trust">✓ Acesso imediato &nbsp; ✓ Acesso vitalício &nbsp; ✓ 7 dias de garantia</div></div></section>
 <div class="divider">☧ FÉ CATÓLICA &nbsp;&nbsp; ✝ ESCRITURA & TRADIÇÃO</div>
-<section><div class="wrap center"><div class="kicker">Veja por dentro</div><h2>Veja por dentro tudo o que você vai receber</h2><p class="sub">Tenha seus estudos organizados em um único lugar, com mais de 400 materiais separados por temas para estudar e consultar no seu ritmo.</p><div class="image-slot filled"><img src="https://i.imgur.com/YDceTGc.jpg" alt="Formação Essencial em Teologia Católica"></div><a class="btn" href="#planos">QUERO TER ACESSO AGORA</a></div></section>
-<section class="cream"><div class="wrap"><div class="two"><div><div class="kicker">✝ Para quem é</div><h2>Esta formação é para você que deseja:</h2><p>Se você já vive a fé, mas sente que ainda existem assuntos que gostaria de compreender melhor, esta formação organiza um caminho para aprofundar seus estudos.</p><div class="checks"><div class="check">✝ Aprofundar a fé</div><div class="check">☧ Entender melhor a Bíblia</div><div class="check">✠ Compreender a Igreja</div><div class="check">⚓ Falar da fé com clareza</div><div class="check">✝ Estudar Teologia</div><div class="check">☧ Aprender no seu ritmo</div></div></div><div class="image-slot filled"><img src="https://i.imgur.com/AIQHSGo.jpg" alt="Materiais da formação católica"></div></div></div></section>
+<section><div class="wrap center"><div class="kicker">Veja por dentro</div><h2>Veja por dentro tudo o que você vai receber</h2><p class="sub">Tenha seus estudos organizados em um único lugar, com mais de 400 materiais separados por temas para estudar e consultar no seu ritmo.</p><div class="image-slot filled"><img src="https://i.imgur.com/YDceTGc.jpg" alt="Formação Essencial em Teologia Católica" loading="lazy" decoding="async"></div><a class="btn" href="#planos">QUERO TER ACESSO AGORA</a></div></section>
+<section class="cream"><div class="wrap"><div class="two"><div><div class="kicker">✝ Para quem é</div><h2>Esta formação é para você que deseja:</h2><p>Se você já vive a fé, mas sente que ainda existem assuntos que gostaria de compreender melhor, esta formação organiza um caminho para aprofundar seus estudos.</p><div class="checks"><div class="check">✝ Aprofundar a fé</div><div class="check">☧ Entender melhor a Bíblia</div><div class="check">✠ Compreender a Igreja</div><div class="check">⚓ Falar da fé com clareza</div><div class="check">✝ Estudar Teologia</div><div class="check">☧ Aprender no seu ritmo</div></div></div><div class="image-slot filled"><img src="https://i.imgur.com/AIQHSGo.jpg" alt="Materiais da formação católica" loading="lazy" decoding="async"></div></div></div></section>
 <section><div class="wrap center"><div class="kicker">Chega de dúvidas</div><h2>Você não precisa continuar com dúvidas sobre a fé que professa</h2><p class="sub">Em vez de depender de informações soltas, tenha uma estrutura clara para estudar e revisar os principais temas.</p><div class="featuregrid"><div class="feature"><h3>✓ Reunido por temas</h3><p>Conteúdos separados para facilitar estudo e consulta.</p></div><div class="feature"><h3>✓ Do essencial ao avançado</h3><p>Comece pelos fundamentos e avance com tranquilidade.</p></div><div class="feature"><h3>✓ Estrutura de estudo</h3><p>Uma sequência mais clara para não ficar perdido.</p></div><div class="feature"><h3>✓ Consulte quando quiser</h3><p>Volte aos materiais sempre que precisar revisar.</p></div></div><a class="btn" href="#planos">QUERO APROFUNDAR MINHA FÉ</a></div></section>
-<section class="dark"><div class="wrap center"><div class="image-slot filled"><img src="https://i.imgur.com/Alwp5gF.jpg" alt="Formação católica para estudo e aprofundamento"></div><div class="kicker">Formação Essencial em Teologia Católica</div><h2>Uma formação completa para começar e aprofundar seus estudos</h2><p class="sub">Explore fundamentos da fé, Bíblia, Doutrina, Santa Missa, Sacramentos e outros grandes temas.</p><div class="coursebox">
+<section class="dark"><div class="wrap center"><div class="image-slot filled"><img src="https://i.imgur.com/Alwp5gF.jpg" alt="Formação católica para estudo e aprofundamento" loading="lazy" decoding="async"></div><div class="kicker">Formação Essencial em Teologia Católica</div><h2>Uma formação completa para começar e aprofundar seus estudos</h2><p class="sub">Explore fundamentos da fé, Bíblia, Doutrina, Santa Missa, Sacramentos e outros grandes temas.</p><div class="coursebox">
 <details open><summary>Fundamentos: Escritura, Tradição e Magistério +</summary><p>Introdução à Teologia · História da Igreja · Sagradas Escrituras · Tradição Católica · Magistério.</p></details>
 <details><summary>Doutrinas Centrais +</summary><p>Dogmas · Cristologia · Mariologia · Eclesiologia · Escatologia.</p></details>
 <details><summary>Apologética & Filosofia +</summary><p>Defesa da Fé · Filosofia Cristã · Ética e Moral · Questões contemporâneas.</p></details>
@@ -227,16 +346,16 @@ p{color:#4f4944}
 <div class="purpose"><b>Para que serve tudo isso no seu dia a dia:</b><ul><li>Bíblia: compreender melhor as Escrituras</li><li>Santa Missa: entender seus principais momentos</li><li>Doutrina: organizar os fundamentos da fé</li><li>Sacramentos: conhecer significado e importância</li><li>Nossa Senhora: aprofundar seu lugar na tradição</li></ul></div><a class="btn" href="#planos">QUERO COMEÇAR AGORA</a></div></section>
 <section><div class="wrap center"><div class="kicker">✝ Como funciona</div><h2>Como você recebe seu acesso</h2><p class="sub">Após a confirmação da compra, você recebe as instruções diretamente no e-mail informado.</p><div class="steps"><div class="step"><b>01</b><h3>Escolha sua opção</h3><p>Formação Essencial ou Formação + Biblioteca.</p></div><div class="step"><b>02</b><h3>Preencha seus dados</h3><p>Informe corretamente seu melhor e-mail.</p></div><div class="step"><b>03</b><h3>Receba seu acesso</h3><p>As instruções chegam após a confirmação.</p></div><div class="step"><b>04</b><h3>Comece a estudar</h3><p>Acesse seus conteúdos e avance no seu ritmo.</p></div></div></div></section>
 <section class="dark"><div class="wrap center"><div class="kicker">✝ Fé e razão</div><h2>A fé católica tem respostas para perguntas que você talvez queira compreender melhor</h2><div class="questions"><div class="qcard"><div class="qnum">01</div><h3>O que acontece na consagração da Missa?</h3><p>Estude o significado da Eucaristia e como a Igreja compreende esse mistério.</p></div><div class="qcard"><div class="qnum">02</div><h3>Por que os católicos pedem a intercessão dos santos?</h3><p>Compreenda as distinções entre adoração, veneração e intercessão.</p></div><div class="qcard"><div class="qnum">03</div><h3>Como se formou a Bíblia Católica?</h3><p>Conheça melhor o cânon e seu contexto histórico.</p></div><div class="qcard"><div class="qnum">04</div><h3>O que a Igreja ensina sobre a vida eterna?</h3><p>Aprofunde temas ligados à escatologia católica.</p></div></div><a class="btn" href="#planos">QUERO ENTENDER TUDO ISSO</a></div></section>
-<section class="cream"><div class="wrap center"><div class="kicker">✝ Na opção Formação + Biblioteca</div><h2>Amplie sua formação com a Biblioteca Católica</h2><p class="sub">Além da formação, a opção completa reúne materiais práticos de espiritualidade, catequese, liturgia e vida de fé.</p><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica com acesso completo"></div><div class="chips"><span class="chip">Novenas</span><span class="chip">Via-Sacra e Adoração</span><span class="chip">Catequese</span><span class="chip">Tempos Litúrgicos</span><span class="chip">Santos e Devoções</span><span class="chip">Crianças e Família</span></div><h3>Por apenas R$ 13 a mais</h3><div class="library"><details><summary>Santos, Liturgia e Tradição +</summary><p>Materiais sobre santos, calendário litúrgico, festas, símbolos e momentos do ano da Igreja.</p></details><details><summary>Pastoral, Grupos e Jovens +</summary><p>Roteiros, encontros, oração, Via-Sacra, novenas e materiais para grupos.</p></details><details><summary>Catequese e Ensino +</summary><p>Guias, atividades, conteúdos infantis, encontros e materiais de apoio.</p></details></div><a class="btn" href="#planos">COMPARAR AS DUAS OPÇÕES</a></div></section>
-<section><div class="wrap center"><div class="kicker">Bônus incluídos</div><h2>Além de todo o conteúdo, você ainda recebe 12 bônus</h2><p class="sub">6 bônus na Formação Essencial e mais 6 na opção com Biblioteca.</p><div class="bonus-gallery"><img src="https://i.imgur.com/xSeeEZj.jpg" alt="Bônus 1"><img src="https://i.imgur.com/PUSVU2O.jpg" alt="Bônus 2"><img src="https://i.imgur.com/PUSVU2O.jpg" alt="Bônus 3"><img src="https://i.imgur.com/XuPFfDe.jpg" alt="Bônus 4"><img src="https://i.imgur.com/2be14nn.jpg" alt="Bônus 5"><img src="https://i.imgur.com/vGpqbo1.jpg" alt="Bônus 6"></div><div class="included"><div>✓ +400 materiais</div><div>✓ Acesso vitalício</div><div>✓ Materiais reunidos por temas</div><div>✓ Pagamento único</div><div>✓ Acesso imediato</div></div></div></section>
-<section class="cream"><div class="wrap center"><div class="kicker">Tudo incluído</div><h2>Tudo o que você recebe ao entrar hoje</h2><div class="included"><div>✓ Formação Essencial completa</div><div>✓ +400 materiais organizados</div><div>✓ 7 áreas de estudo</div><div>✓ Plano de estudos</div><div>✓ Mapas mentais e resumos</div><div>✓ Acesso pelo celular ou computador</div><div>✓ Acesso vitalício</div><div>✓ Bônus digitais</div></div><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Tudo o que você recebe ao entrar hoje"></div><a class="btn" href="#planos">QUERO GARANTIR MEU ACESSO</a></div></section>
-<section id="planos"><div class="wrap center"><div class="kicker">✝ Duas opções</div><h2>Escolha a opção ideal para você</h2><p class="sub">A Formação Essencial está completa nas duas opções. Por R$ 27,90, você também leva a Biblioteca Católica e conteúdos extras.</p><p>Preço especial encerra em:</p><div class="timer" id="timer">15:00</div><div class="plans"><div class="plan"><div class="kicker">Para começar seus estudos</div><h3>Formação Essencial</h3><ul><li>+400 materiais organizados</li><li>Plano de estudos</li><li>Mapas mentais e resumos</li><li>Acesso digital</li><li>Acesso vitalício</li><li>6 bônus</li></ul><div class="money">R$ 14,90</div><div class="center">pagamento único</div><a class="btn" href="#">QUERO GARANTIR MEU ACESSO</a><div class="trust center">Checkout será adicionado depois</div></div><div class="plan best"><div class="tag">✦ MELHOR CUSTO-BENEFÍCIO</div><div class="kicker">Para ir além</div><h3>Formação + Biblioteca Católica</h3><img class="plan-product-img" src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica - acesso completo"><ul><li>Tudo da Formação Essencial</li><li>Biblioteca Católica</li><li>Novenas</li><li>Via-Sacra e Adoração</li><li>Materiais de Catequese</li><li>Santos, Devoções e Ano Litúrgico</li><li>+6 bônus exclusivos</li></ul><div class="money">R$ 27,90</div><div class="center">pagamento único · apenas R$13 a mais</div><a class="btn" href="#">QUERO O ACESSO COMPLETO</a><div class="trust center">Checkout será adicionado depois</div></div></div></div></section>
-<section class="dark"><div class="wrap"><div class="guarantee"><div class="seal"><img class="guarantee-img" src="https://i.imgur.com/zqMpJ16.png" alt="Garantia de 7 dias"></div><div><h2>Você tem 7 dias para conhecer tudo</h2><p>Use este espaço para apresentar exatamente as condições da garantia oferecida no seu checkout. O texto final deve corresponder às condições reais de reembolso.</p></div></div></div></section>
-<section><div class="wrap center"><div class="kicker">Depoimentos</div><h2>O que dizem os alunos</h2><p class="sub">Adicione aqui apenas avaliações reais recebidas do seu produto.</p><img class="testimonial-image" src="https://i.imgur.com/HgF2qAy.png" alt="Depoimentos de alunos"></div></section>
-<section class="cream"><div class="wrap"><div class="project"><div class="projectlogo"><img class="projectlogo-img" src="https://i.imgur.com/5lngx9f.png" alt="Logo Formação Essencial em Teologia Católica"></div><div><div class="kicker">Projeto independente</div><h2>Um projeto dedicado a tornar o estudo da fé católica mais acessível</h2><p>A Formação Essencial foi organizada para ajudar quem deseja conhecer e aprofundar a própria fé, com conteúdos separados por temas e uma experiência de estudo simples.</p><p><b>† Projeto independente de estudo pessoal.</b> Não apresenta vínculo institucional ou reconhecimento acadêmico oficial.</p></div></div></div></section>
+<section class="cream"><div class="wrap center"><div class="kicker">✝ Na opção Formação + Biblioteca</div><h2>Amplie sua formação com a Biblioteca Católica</h2><p class="sub">Além da formação, a opção completa reúne materiais práticos de espiritualidade, catequese, liturgia e vida de fé.</p><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica com acesso completo" loading="lazy" decoding="async"></div><div class="chips"><span class="chip">Novenas</span><span class="chip">Via-Sacra e Adoração</span><span class="chip">Catequese</span><span class="chip">Tempos Litúrgicos</span><span class="chip">Santos e Devoções</span><span class="chip">Crianças e Família</span></div><h3>Por apenas R$ 13 a mais</h3><div class="library"><details><summary>Santos, Liturgia e Tradição +</summary><p>Materiais sobre santos, calendário litúrgico, festas, símbolos e momentos do ano da Igreja.</p></details><details><summary>Pastoral, Grupos e Jovens +</summary><p>Roteiros, encontros, oração, Via-Sacra, novenas e materiais para grupos.</p></details><details><summary>Catequese e Ensino +</summary><p>Guias, atividades, conteúdos infantis, encontros e materiais de apoio.</p></details></div><a class="btn" href="#planos">COMPARAR AS DUAS OPÇÕES</a></div></section>
+<section><div class="wrap center"><div class="kicker">Bônus incluídos</div><h2>Além de todo o conteúdo, você ainda recebe 12 bônus</h2><p class="sub">6 bônus na Formação Essencial e mais 6 na opção com Biblioteca.</p><div class="bonus-gallery"><img src="https://i.imgur.com/xSeeEZj.jpg" alt="Bônus 1" loading="lazy" decoding="async"><img src="https://i.imgur.com/PUSVU2O.jpg" alt="Bônus 2" loading="lazy" decoding="async"><img src="https://i.imgur.com/PUSVU2O.jpg" alt="Bônus 3" loading="lazy" decoding="async"><img src="https://i.imgur.com/XuPFfDe.jpg" alt="Bônus 4" loading="lazy" decoding="async"><img src="https://i.imgur.com/2be14nn.jpg" alt="Bônus 5" loading="lazy" decoding="async"><img src="https://i.imgur.com/vGpqbo1.jpg" alt="Bônus 6" loading="lazy" decoding="async"></div><div class="included"><div>✓ +400 materiais</div><div>✓ Acesso vitalício</div><div>✓ Materiais reunidos por temas</div><div>✓ Pagamento único</div><div>✓ Acesso imediato</div></div></div></section>
+<section class="cream"><div class="wrap center"><div class="kicker">Tudo incluído</div><h2>Tudo o que você recebe ao entrar hoje</h2><div class="included"><div>✓ Formação Essencial completa</div><div>✓ +400 materiais organizados</div><div>✓ 7 áreas de estudo</div><div>✓ Plano de estudos</div><div>✓ Mapas mentais e resumos</div><div>✓ Acesso pelo celular ou computador</div><div>✓ Acesso vitalício</div><div>✓ Bônus digitais</div></div><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Tudo o que você recebe ao entrar hoje" loading="lazy" decoding="async"></div><a class="btn" href="#planos">QUERO GARANTIR MEU ACESSO</a></div></section>
+<section id="planos"><div class="wrap center"><div class="kicker">✝ Duas opções</div><h2>Escolha a opção ideal para você</h2><p class="sub">A Formação Essencial está completa nas duas opções. Por R$ 27,90, você também leva a Biblioteca Católica e conteúdos extras.</p><p>Preço especial encerra em:</p><div class="timer" id="timer">15:00</div><div class="plans"><div class="plan"><div class="kicker">Para começar seus estudos</div><h3>Formação Essencial</h3><ul><li>+400 materiais organizados</li><li>Plano de estudos</li><li>Mapas mentais e resumos</li><li>Acesso digital</li><li>Acesso vitalício</li><li>6 bônus</li></ul><div class="money">R$ 14,90</div><div class="center">pagamento único</div><a class="btn" href="#">QUERO GARANTIR MEU ACESSO</a><div class="trust center">Checkout será adicionado depois</div></div><div class="plan best"><div class="tag">✦ MELHOR CUSTO-BENEFÍCIO</div><div class="kicker">Para ir além</div><h3>Formação + Biblioteca Católica</h3><img class="plan-product-img" src="https://i.imgur.com/mNCoYWd.png" alt="Biblioteca Católica - acesso completo" loading="lazy" decoding="async"><ul><li>Tudo da Formação Essencial</li><li>Biblioteca Católica</li><li>Novenas</li><li>Via-Sacra e Adoração</li><li>Materiais de Catequese</li><li>Santos, Devoções e Ano Litúrgico</li><li>+6 bônus exclusivos</li></ul><div class="money">R$ 27,90</div><div class="center">pagamento único · apenas R$13 a mais</div><a class="btn" href="#">QUERO O ACESSO COMPLETO</a><div class="trust center">Checkout será adicionado depois</div></div></div></div></section>
+<section class="dark"><div class="wrap"><div class="guarantee"><div class="seal"><img class="guarantee-img" src="https://i.imgur.com/zqMpJ16.png" alt="Garantia de 7 dias" loading="lazy" decoding="async"></div><div><h2>Você tem 7 dias para conhecer tudo</h2><p>Use este espaço para apresentar exatamente as condições da garantia oferecida no seu checkout. O texto final deve corresponder às condições reais de reembolso.</p></div></div></div></section>
+<section><div class="wrap center"><div class="kicker">Depoimentos</div><h2>O que dizem os alunos</h2><p class="sub">Adicione aqui apenas avaliações reais recebidas do seu produto.</p><img class="testimonial-image" src="https://i.imgur.com/HgF2qAy.png" alt="Depoimentos de alunos" loading="lazy" decoding="async"></div></section>
+<section class="cream"><div class="wrap"><div class="project"><div class="projectlogo"><img class="projectlogo-img" src="https://i.imgur.com/5lngx9f.png" alt="Logo Formação Essencial em Teologia Católica" loading="lazy" decoding="async"></div><div><div class="kicker">Projeto independente</div><h2>Um projeto dedicado a tornar o estudo da fé católica mais acessível</h2><p>A Formação Essencial foi organizada para ajudar quem deseja conhecer e aprofundar a própria fé, com conteúdos separados por temas e uma experiência de estudo simples.</p><p><b>† Projeto independente de estudo pessoal.</b> Não apresenta vínculo institucional ou reconhecimento acadêmico oficial.</p></div></div></div></section>
 <section><div class="wrap"><div class="center"><div class="kicker">Dúvidas frequentes</div><h2>Perguntas que aparecem antes da compra</h2></div><div class="faq"><details><summary>Preciso ter conhecimento prévio de Teologia? +</summary><p>Não. Você pode começar pelos fundamentos e avançar no próprio ritmo.</p></details><details><summary>Qual a diferença entre as duas opções? +</summary><p>A opção de R$14,90 inclui a Formação Essencial. A de R$27,90 acrescenta a Biblioteca Católica e 6 bônus extras.</p></details><details><summary>Como recebo o acesso? +</summary><p>Após a confirmação, as instruções são enviadas para o e-mail informado na compra.</p></details><details><summary>Posso imprimir os materiais? +</summary><p>Defina esta resposta conforme os direitos e permissões dos materiais que você realmente entregar.</p></details><details><summary>Oferece certificado oficial? +</summary><p>Não. Esta oferta é apresentada como formação livre para estudo pessoal, sem graduação ou reconhecimento acadêmico oficial.</p></details><details><summary>Por quanto tempo tenho acesso? +</summary><p>O acesso anunciado nesta página é vitalício.</p></details></div></div></section>
-<section class="hero"><div class="wrap"><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Formação Essencial em Teologia Católica"></div><div class="cross">✝</div><div class="kicker">Aprofunde seus estudos</div><h2>Comece hoje sua Formação Essencial em Teologia Católica</h2><div class="chips"><span class="chip">✓ +400 materiais</span><span class="chip">✓ Acesso vitalício</span><span class="chip">✓ Pagamento único</span><span class="chip">✓ Acesso imediato</span></div><div class="priceLead">A partir de <b>R$ 14,90</b></div><br><a class="btn" href="#planos">QUERO COMEÇAR AGORA</a></div></section>
-<section class="final-extra-image"><div class="wrap center"><div class="image-slot filled"><img src="https://i.imgur.com/6edfmO3.png" alt="Imagem adicional da Formação Essencial em Teologia Católica"></div></div></section>
+<section class="hero"><div class="wrap"><div class="image-slot filled"><img src="https://i.imgur.com/mNCoYWd.png" alt="Formação Essencial em Teologia Católica" loading="lazy" decoding="async"></div><div class="cross">✝</div><div class="kicker">Aprofunde seus estudos</div><h2>Comece hoje sua Formação Essencial em Teologia Católica</h2><div class="chips"><span class="chip">✓ +400 materiais</span><span class="chip">✓ Acesso vitalício</span><span class="chip">✓ Pagamento único</span><span class="chip">✓ Acesso imediato</span></div><div class="priceLead">A partir de <b>R$ 14,90</b></div><br><a class="btn" href="#planos">QUERO COMEÇAR AGORA</a></div></section>
+<section class="final-extra-image"><div class="wrap center"><div class="image-slot filled"><img src="https://i.imgur.com/6edfmO3.png" alt="Imagem adicional da Formação Essencial em Teologia Católica" loading="lazy" decoding="async"></div></div></section>
 <section class="student"><div class="wrap"><div class="studentbox"><div class="cross">✝</div><div class="kicker">Já é aluno?</div><h2>Já comprou? Acesse seus materiais aqui</h2><p>Quando sua área de membros estiver definida, coloque o link de acesso neste botão.</p><a class="btn" href="#">ACESSAR MEUS PRODUTOS</a></div></div></section>
 <section class="cream"><div class="wrap center"><div class="kicker">Precisa de ajuda?</div><h2>Fale com o suporte</h2><p class="sub">Quando você definir seus canais de atendimento, os botões de e-mail e WhatsApp entram exatamente aqui.</p><div class="chips"><span class="chip">✉ ABRIR E-MAIL</span><span class="chip">◉ ABRIR WHATSAPP</span></div></div></section><div class="footer">Formação Essencial em Teologia Católica · Produto digital · Projeto independente<br>© 2026 · Todos os direitos reservados</div>
 <div class="modal" id="exit"><div class="modalbox"><button class="close" onclick="closeExit()">×</button><div class="kicker">Antes de sair</div><h2>Uma condição especial pode aparecer aqui</h2><p>O bloco de oferta de saída está funcional. Assim que você definir a condição real e o checkout, substituímos este conteúdo.</p><a class="btn" href="#planos" onclick="closeExit()">VER AS OPÇÕES</a></div></div>
