@@ -802,14 +802,19 @@ document.addEventListener('click',e=>{
 });
 </script><script id="image-copy-protection-script">(function () {
   'use strict';
-  // Friction against casual image copying; public assets remain downloadable.
-  function isImage(target) {
-    return target && target.tagName === 'IMG';
-  }
   document.addEventListener('dragstart', function (event) {
-    if (isImage(event.target)) event.preventDefault();
+    if (event.target && event.target.tagName === 'IMG') event.preventDefault();
   });
   document.addEventListener('contextmenu', function (event) {
-    if (isImage(event.target)) event.preventDefault();
-  });
+    event.preventDefault();
+  }, true);
+  document.addEventListener('keydown', function (event) {
+    const key = String(event.key).toLowerCase();
+    const ctrl = event.ctrlKey || event.metaKey;
+    const inspect = key === 'f12' ||
+      (ctrl && event.shiftKey && ['i', 'j', 'c'].includes(key)) ||
+      (event.metaKey && event.altKey && ['i', 'j', 'c'].includes(key));
+    const sourceOrSave = ctrl && ['u', 's'].includes(key);
+    if (inspect || sourceOrSave) event.preventDefault();
+  }, true);
 })();</script></body></html>
