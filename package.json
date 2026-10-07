@@ -1,0 +1,8 @@
+{
+  "name": "formacao-teologia",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@vercel/functions": "3.9.11"
+  }
+}
