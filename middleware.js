@@ -10,10 +10,10 @@ export const config = {
 export default function middleware(request) {
   const userAgent = request.headers.get('user-agent') || '';
   if (automatedClient.test(userAgent)) {
-    return new Response('Acesso automatizado não autorizado.', {
-      status: 403,
+    return new Response(null, {
+      status: 307,
       headers: {
-        'Content-Type': 'text/plain; charset=utf-8',
+        'Location': 'https://formacao-teologia.vercel.app/protecao.html',
         'Cache-Control': 'private, no-store',
         'X-Robots-Tag': 'noindex, nofollow',
       },
